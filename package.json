@@ -1,0 +1,28 @@
+{
+  "name": "PlayerBackground",
+  "version": "0.0.1",
+  "description": "plays video",
+  "repository": {
+    "type": "git",
+    "url": "REPO"
+  },
+  "cordova": {
+    "id": "player-background",
+    "platforms": [
+      "iOS,Android"
+    ]
+  },
+  "keywords": [
+    "PlayerBackground",
+    "ionic-PlayerBackground",
+    "cordova PlayerBackground",
+    "cordova",
+    "phonegap",
+    "ecosystem:cordova",
+    "cordova-ios",
+    "ios",
+    "ionic"
+  ],
+  "author": "andre",
+  "license": "MIT"
+}
