@@ -10,6 +10,60 @@ import UIKit
         // Always set the plugin status as ERROR, until you do what you need to do.
         var pluginResult = CDVPluginResult (status: CDVCommandStatus_ERROR);
 
+
+
+
+
+
+        var player = AVPlayer()
+        var playerViewcontroller = AVPlayerViewController()
+        
+        /*override func viewDidLoad() {
+            super.viewDidLoad()
+            // Do any additional setup after loading the view, typically from a nib.
+        }*/
+
+        //@IBAction func playVideo(_ sender: Any) {
+            
+            
+            
+            
+            guard let url = URL(string: "https://evpp.mm.uol.com.br/band_live/terraviva/playlist.m3u8") else {
+                return
+            }
+            
+            // Create an AVPlayer, passing it the HTTP Live Streaming URL.
+            player = AVPlayer(url: url)
+            
+            // Create a new AVPlayerViewController and pass it a reference to the player.
+            playerViewcontroller.player = player
+            playerViewcontroller.showsPlaybackControls = true
+            
+            // Modally present the player and call the player's play() method when complete.
+            present(playerViewcontroller, animated: true) {
+                self.player.play()
+            }
+        //}
+        /*
+        public func disconnectAVPlayer() {
+            playerViewcontroller.player = nil
+        }
+        
+        public func reconnectAVPlayer() {
+            playerViewcontroller.player = player
+        }
+        */
+
+
+
+
+
+
+
+
+
+
+
         // Plugin Command Arguments
         // let x:Int = command.arguments![0] as! Int; // Change this accordingly.
         // let y:Int = command.arguments![1] as! Int; // Change this accordingly.
