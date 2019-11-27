@@ -40,9 +40,10 @@ import UIKit
             playerViewcontroller.showsPlaybackControls = true
             
             // Modally present the player and call the player's play() method when complete.
-            present(playerViewcontroller, animated: true) {
+       /*     present(playerViewcontroller, animated: true) {
                 self.player.play()
             }
+            */
         //}
         /*
         public func disconnectAVPlayer() {
@@ -57,7 +58,7 @@ import UIKit
 
 
 
-
+        print("Testezão !"");
 
 
 
@@ -69,9 +70,9 @@ import UIKit
         // let y:Int = command.arguments![1] as! Int; // Change this accordingly.
 
         // Whatever your plugin does after startup goes here.
-        print('PlayerBackground ran correctly!');
+        /*print('PlayerBackground ran correctly!');
         print('Thank you for using the Ionic-Plugin-Assistant');
-        print('Written by Jordan Benge @Bengejd');
+        print('Written by Jordan Benge @Bengejd');*/
 
         // We did the stuff, and now we're finished. Set the status as OK.
         pluginResult = CDVPluginResult(status: CDVCommandStatus_OK);
