@@ -35,4 +35,7 @@ export class PlayerBackground extends IonicNativePlugin {
   startPlugin(options: PLUGIN_INTERFACE_OPTIONS): Promise<any> {
     return;
   }
+  pause(options: PLUGIN_INTERFACE_OPTIONS): Promise<any> {
+    return;
+  }
 }
